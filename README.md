@@ -1,3 +1,15 @@
+## Notes on the implementation
+
+* Common code is located in in <tt>utils.R</tt>
+
+* Data file is downloaded if it's not already present.
+
+* After extracting the subset and performing initial data massaging, it is
+  saved as an Rdata file. All subsequent runs will load this file instead,
+  dramatically speeding up the execution.
+  
+
+
 ## Introduction
 
 This assignment uses data from
